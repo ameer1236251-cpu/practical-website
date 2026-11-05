@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciPrax Studio | Academic Practicals Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: { 900: '#030712', 800: '#0b0f19' },
+                        accent: { indigo: '#6366f1', emerald: '#10b981', violet: '#8b5cf6', cyan: '#06b6d4', rose: '#f43f5e', amber: '#f59e0b' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .gradient-mesh { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15), transparent 50%), radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.1), transparent 50%); }
+    </style>
+</head>
+<body class="bg-obsidian-900 text-slate-200 min-h-screen gradient-mesh flex flex-col">
+
+    <!-- Nav -->
+    <nav class="glass sticky top-0 z-50 p-4 border-b border-white/10">
+        <div class="max-w-6xl mx-auto flex justify-center items-center">
+            <h1 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-accent-indigo to-accent-cyan">ALL Practical PDF</h1>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="max-w-6xl mx-auto p-6 flex-grow w-full">
+        <header class="py-12 text-center">
+            <h2 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">Academic Practicals Hub</h2>
+            <p class="text-slate-400 text-lg">Direct access to Physics, Chemistry, ICT, Botany, and Zoology manuals.</p>
+        </header>
+
+        <!--
+          ========================================================================
+          PDF LINKS SECTION:
+          Make sure your PDF files (physics.pdf, chemistry.pdf, ict.pdf, botany.pdf, zoology.pdf)
+          are in the same folder as this HTML file.
+          ========================================================================
+        -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+
+            <!-- Physics Card -->
+            <div class="glass p-8 rounded-3xl border border-white/5 hover:border-accent-cyan transition-all transform hover:-translate-y-2 flex flex-col justify-between group">
+                <div>
+                    <span class="text-xs font-bold text-accent-cyan bg-accent-cyan/10 px-3 py-1 rounded-full">Physics 1st Paper</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-3">Physics Practicals</h3>
+                    <p class="text-slate-400 text-sm mb-6">Complete manual for Physics 1st Paper practical experiments without figures.</p>
+                </div>
+                <div>
+                    <a href="physics.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-accent-cyan/20 hover:bg-accent-cyan/30 text-accent-cyan font-bold rounded-xl text-center block transition-colors">
+                        Open PDF ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Chemistry Card -->
+            <div class="glass p-8 rounded-3xl border border-white/5 hover:border-accent-emerald transition-all transform hover:-translate-y-2 flex flex-col justify-between group">
+                <div>
+                    <span class="text-xs font-bold text-accent-emerald bg-accent-emerald/10 px-3 py-1 rounded-full">Chemistry 1st Paper</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-3">Chemistry 13 Practicals</h3>
+                    <p class="text-slate-400 text-sm mb-6">All 13 chemistry practical experiments prior to Eid / Kurbanir Aghe.</p>
+                </div>
+                <div>
+                    <a href="chemistry.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-accent-emerald/20 hover:bg-accent-emerald/30 text-accent-emerald font-bold rounded-xl text-center block transition-colors">
+                        Open PDF ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- ICT Card -->
+            <div class="glass p-8 rounded-3xl border border-white/5 hover:border-accent-violet transition-all transform hover:-translate-y-2 flex flex-col justify-between group">
+                <div>
+                    <span class="text-xs font-bold text-accent-violet bg-accent-violet/10 px-3 py-1 rounded-full">ICT Practicals</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-3">ICT Practicals 1, 2, 3</h3>
+                    <p class="text-slate-400 text-sm mb-6">Practicals 1, 2, and 3 covering HTML, C Programming, and Database design.</p>
+                </div>
+                <div>
+                    <a href="ict.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-accent-violet/20 hover:bg-accent-violet/30 text-accent-violet font-bold rounded-xl text-center block transition-colors">
+                        Open PDF ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Botany Card -->
+            <div class="glass p-8 rounded-3xl border border-white/5 hover:border-accent-rose transition-all transform hover:-translate-y-2 flex flex-col justify-between group">
+                <div>
+                    <span class="text-xs font-bold text-accent-rose bg-accent-rose/10 px-3 py-1 rounded-full">Biology: Botany</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-3">Botany Practicals</h3>
+                    <p class="text-slate-400 text-sm mb-6">Comprehensive Botany practical guide (by Arman) for biological studies.</p>
+                </div>
+                <div>
+                    <a href="botany.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-accent-rose/20 hover:bg-accent-rose/30 text-accent-rose font-bold rounded-xl text-center block transition-colors">
+                        Open PDF ↗
+                    </a>
+                </div>
+            </div>
+
+            <!-- Zoology Card -->
+            <div class="glass p-8 rounded-3xl border border-white/5 hover:border-accent-amber transition-all transform hover:-translate-y-2 flex flex-col justify-between group">
+                <div>
+                    <span class="text-xs font-bold text-accent-amber bg-accent-amber/10 px-3 py-1 rounded-full">Biology: Zoology</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-3">Zoology Practicals</h3>
+                    <p class="text-slate-400 text-sm mb-6">Complete manual for Zoology practical experiments and observations.</p>
+                </div>
+                <div>
+                    <a href="zoology.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-3 bg-accent-amber/20 hover:bg-accent-amber/30 text-accent-amber font-bold rounded-xl text-center block transition-colors">
+                        Open PDF ↗
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-slate-500 text-sm border-t border-white/5 mt-12">
+        SciPrax Studio &copy; 2026 &bull; Academic Practical Resources
+    </footer>
+
+</body>
+</html>
 
